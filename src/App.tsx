@@ -38,7 +38,11 @@ export default function App() {
                     setError(e.message);
                 }
             } finally {
-                window.history.replaceState({}, document.title, '/');
+                window.history.replaceState(
+                    {},
+                    document.title,
+                    window.location.origin + window.location.pathname
+                );
             }
         }
     }, []);
