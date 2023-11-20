@@ -36,10 +36,13 @@ export default function Card(props: {
                             ...commonStyle,
                             cursor: 'pointer',
                             height: '100%',
+                            maxHeight: '8.5rem',
+                            overflowY: 'auto',
                             width: '100%',
                             userSelect: 'none',
                             wordBreak: 'break-word',
-                            padding: '1rem'
+                            padding: '.5rem .75rem',
+                            lineHeight: '1.15'
                         }}
                     >
                         {props.textValue}
